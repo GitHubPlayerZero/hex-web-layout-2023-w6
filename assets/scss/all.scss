@@ -1,10 +1,19 @@
 // 因為複製 BS 的 _variables.scss 出來用，需要先載入這個。
 @import "../../node_modules/bootstrap/scss/functions";
 
-// 複製 BS 的 _variables.scss，以便自己修改變數客製化。
-@import './utils/variables';
+// 複製 BS 的 _variables.scss，以便客製化。
+@import './utils/variables-custom';
+// 複製 BS 的 _utilities.scss，以便客製化。
+@import './utils/_utilities-custom';
 
 // 載入 BS5 的所有 SCSS。
 @import "../../node_modules/bootstrap";
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";	// for sass live compiler
 
+@import "./base";
 
+@import "./component/title";
+@import "./component/card";
+@import "./component/label";
+
+@import "./utils/helper";

@@ -1,0 +1,22 @@
+$isDebug: false;
+@if $isDebug {
+	* {
+		outline: 1px dashed blue;
+	}
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	color: inherit;
+}
+
+ul, ol {
+	padding-left: 0;
+	list-style: none;
+	margin-bottom: 0;
+}

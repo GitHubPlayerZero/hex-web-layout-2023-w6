@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>7TAO - 首頁</title>
+
+	<%- include('./layout/head-vendor'); -%>
+
+	<style type="text/css">
+		.myh2 {
+			margin-bottom: 30px;
+			border-bottom: 3px dashed blue;
+			display: inline-block;
+		}
+	</style>
+
+</head>
+
+<body>
+	<%- include('./layout/header'); -%>
+
+	<div class="container">
+
+		<h2 class="myh2">字體</h2>
+		<p>ChatGPT</p>
+		<p class="noto-serif-tc">ChatGPT (noto-serif-tc)</p>
+		<p class="noto-sans-tc">ChatGPT (noto-sans-tc)</p>
+		
+		<br><hr><br>
+	
+		<h2 class="myh2">.headline</h2>
+		<h2 class="headline mb-6 mb-md-8">
+			<span class="headline-left">RECENT</span>
+			<span class="headline-right">近期活動</span>
+		</h2>
+	
+		<br><hr><br>
+	
+		<h2 class="myh2">.card1</h2>
+		<!-- <ul class="row row-cols-md-2 row-cols-lg-3 gy-6 gy-md-8"> -->
+		<ul class="row row-cols-md-2 row-cols-lg-3 row-gap-6 row-gap-md-8">
+			<li>
+				<section class="card1">
+					<p class="card1-header">19 MAY 2023</p>
+					<img src="../assets/images/event/01.jpg" alt="event_01" loading="lazy" class="card1-img">
+					<h2 class="card1-title">邪典電影派對——房間</h2>
+					<p class="card1-content">你有聽說過「大災難家」裡面的主角 Tommy Wiseau 製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...</p>
+					
+					<div class="card1-footer">
+						<p class="card1-footer-left">
+							<span class="card1-sparkler"></span>
+							<a href="#">演出</a>
+						</p>
+						<p class="card1-footer-right">
+							<a href="#">開賣中</a>
+							<i class="icofont-rounded-double-right"></i>
+						</p>
+					</div>
+				</section>
+			</li>
+			<li>
+				<section class="card1">
+					<p class="card1-header">19 MAY 2023</p>
+					<img src="../assets/images/event/01.jpg" alt="event_01" loading="lazy" class="card1-img">
+					<h2 class="card1-title">邪典電影派對——房間</h2>
+					<p class="card1-content">你有聽說過「大災難家」裡面的主角 Tommy Wiseau 製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...</p>
+					
+					<div class="card1-footer">
+						<p class="card1-footer-left">
+							<span class="card1-sparkler"></span>
+							<a href="#">演出</a>
+						</p>
+						<p class="card1-footer-right">
+							<a href="#">開賣中</a>
+							<i class="icofont-rounded-double-right"></i>
+						</p>
+					</div>
+				</section>
+			</li>
+			<li>
+				<section class="card1">
+					<p class="card1-header">19 MAY 2023</p>
+					<img src="../assets/images/event/01.jpg" alt="event_01" loading="lazy" class="card1-img">
+					<h2 class="card1-title">邪典電影派對——房間</h2>
+					<p class="card1-content">你有聽說過「大災難家」裡面的主角 Tommy Wiseau 製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...</p>
+					
+					<div class="card1-footer">
+						<p class="card1-footer-left">
+							<span class="card1-sparkler"></span>
+							<a href="#">演出</a>
+						</p>
+						<p class="card1-footer-right">
+							<a href="#">開賣中</a>
+							<i class="icofont-rounded-double-right"></i>
+						</p>
+					</div>
+				</section>
+			</li>
+		</ul>
+
+		<br><hr><br>
+
+		<h2 class="myh2">.label-shadow</h2>
+
+		<div class="d-flex column-gap-2">
+			<a href="#" class="label-shadow">競賽</a>
+			<a href="#" class="label-shadow">科技</a>
+			<a href="#" class="label-shadow">有趣</a>
+		</div>
+
+		<br><hr><br>
+		
+		<h2 class="myh2">.label-title</h2>
+
+		<div style="position: relative; width: 306px; height: 380px; border: 1px solid">
+			<span class="label-title">社群活動</span>
+		</div>
+
+		<br><hr><br>
+		
+		<h2 class="myh2">BS utilities、.label-title、自定義 rotate</h2>
+
+		<ul class="row row-gap-12 no-gutter-mobile">
+			<li class="col-10 col-md-6 col-lg-3 m-auto">
+				<div class="bg-body p-3 p-md-4 pb-8 pb-md-12 border border-2 border-primary position-relative">
+					<span class="label-title">社群活動</span>
+					<img src="../assets/images/album/01.jpg" class="aspect-ratio-1 object-fit-cover mb-3 mb-md-4" alt="...">
+					<h2 class="fw-bold fs-18 lh-144 text-black">無聲派對-閉閉嘴dancing</h2>
+				</div>
+			</li>
+			<li class="col-10 col-md-6 col-lg-3 m-auto">
+				<div class="bg-body p-3 p-md-4 pb-8 pb-md-12 border border-2 border-primary rotate-2 position-relative">
+					<span class="label-title">社群活動</span>
+					<img src="../assets/images/album/02.jpg" class="aspect-ratio-1 object-fit-cover mb-3 mb-md-4" alt="...">
+					<h2 class="fw-bold fs-18 lh-144 text-black">無聲派對-閉閉嘴dancing</h2>
+				</div>
+			</li>
+			<li class="col-10 col-md-6 col-lg-3 m-auto">
+				<div class="bg-body p-3 p-md-4 pb-8 pb-md-12 border border-2 border-primary rotate-n2 position-relative">
+					<span class="label-title">社群活動</span>
+					<img src="../assets/images/album/03.jpg" class="aspect-ratio-1 object-fit-cover mb-3 mb-md-4" alt="...">
+					<h2 class="fw-bold fs-18 lh-144 text-black">無聲派對-閉閉嘴dancing</h2>
+				</div>
+			</li>
+			<li class="col-10 col-md-6 col-lg-3 m-auto">
+				<div class="bg-body p-3 p-md-4 pb-8 pb-md-12 border border-2 border-primary rotate-2 position-relative">
+					<span class="label-title">社群活動</span>
+					<img src="../assets/images/album/04.jpg" class="aspect-ratio-1 object-fit-cover mb-3 mb-md-4" alt="...">
+					<h2 class="fw-bold fs-18 lh-144 text-black">無聲派對-閉閉嘴dancing</h2>
+				</div>
+			</li>
+		</ul>
+
+		<br><hr><br>
+
+		<h2 class="myh2">icon</h2>
+
+		<ul class="iconlist">
+			<li>
+				<div class="icon-holder">
+					<div class="icon">
+						<i class="icofont-rounded-double-right"></i>
+					</div>
+					<span> rounded-double-right </span>
+				</div>
+			</li>
+			<li>
+				<div class="icon-holder">
+					<div class="icon">
+						<i class="icofont-ui-file"></i>
+					</div>
+					<span> ui-file </span>
+				</div>
+			</li>
+			<li>
+				<div class="icon-holder">
+					<div class="icon">
+						<i class="icofont-ui-user"></i>
+					</div>
+					<span> ui-user </span>
+				</div>
+			</li>
+			<li>
+				<div class="icon-holder">
+					<div class="icon">
+						<i class="icofont-search-1"></i>
+					</div>
+					<span> search-1 </span>
+				</div>
+			</li>
+			<li>
+				<div class="icon-holder">
+					<div class="icon">
+						<i class="icofont-phone"></i>
+					</div>
+					<span> phone </span>
+				</div>
+			</li>
+			<li>
+				<div class="icon-holder">
+					<div class="icon">
+						<i class="icofont-facebook"></i>
+					</div>
+					<span> facebook </span>
+				</div>
+			</li>
+			<li>
+				<div class="icon-holder">
+					<div class="icon">
+						<i class="icofont-ui-email"></i>
+					</div>
+					<span> ui-email </span>
+				</div>
+			</li>
+			<li>
+				<div class="icon-holder">
+					<div class="icon">
+						<i class="icofont-arrow-left"></i>
+					</div>
+					<span> arrow-left </span>
+				</div>
+			</li>
+			<li>
+				<div class="icon-holder">
+					<div class="icon">
+						<i class="icofont-arrow-right"></i>
+					</div>
+					<span> arrow-right </span>
+				</div>
+			</li>
+			<li>
+				<div class="icon-holder">
+					<div class="icon">
+						<i class="icofont-verification-check"></i>
+					</div>
+					<span> verification-check </span>
+				</div>
+			</li>
+			<li>
+				<div class="icon-holder">
+					<div class="icon">
+						<i class="icofont-check-circled"></i>
+					</div>
+					<span> check-circled </span>
+				</div>
+			</li>
+			<li>
+				<div class="icon-holder">
+					<div class="icon">
+						<i class="icofont-copyright"></i>
+					</div>
+					<span> copyright </span>
+				</div>
+			</li>
+		</ul>
+
+	</div>
+
+	<br><hr><br>
+
+	<h2 class="myh2">輪播</h2>
+
+	<script type="module">
+		import Swiper from 'swiper/bundle';
+		import 'swiper/css/bundle';
+
+		const swiper = new Swiper(".news-crawl", {
+			allowTouchMove: false,	//避免使用者移動到
+			slidesPerView: "auto",	//能呈現幾個.swiper-slide
+			loop: true,	//是否重複
+			speed: 20000,	//跑馬燈的速度(毫秒)
+			autoplay: {
+				delay: 0,	//到下一個幻燈片時，停下的時間
+				disableOnInteraction: false	//避免點擊造成跑馬燈失效
+			}
+		});
+	</script>
+
+	<div class="swiper news-crawl bg-primary py-4 py-md-6 noto-serif-tc fw-bold fs-md-32 lh-144 lts-p10 text-secondary text-nowrap">
+		<div class="swiper-wrapper trstf-linear">
+			<p class="swiper-slide w-auto">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</p>
+			<p class="swiper-slide w-auto">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</p>
+			<p class="swiper-slide w-auto">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</p>
+		</div>
+	</div>
+
+	<%- include('./layout/footer'); -%>
+	<%- include('./layout/end'); -%>
+</body>
+</html>

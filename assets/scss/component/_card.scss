@@ -1,0 +1,116 @@
+// Card
+
+.card1 {
+	&-header {
+		font-size: 32px;
+		line-height: 1.16;
+		padding-bottom: 8px;
+		border-bottom: 3px solid $primary;
+		margin-bottom: 16px;
+		
+		@include media-breakpoint-up(md) {
+			font-size: 48px;
+			padding-bottom: 12px;
+			margin-bottom: 12px;
+		}
+	}
+
+	&-img {
+		aspect-ratio: 1 / 0.6;
+		object-fit: cover;
+		margin-bottom: 8px;
+		
+		@include media-breakpoint-up(md) {
+			margin-bottom: 12px;
+		}
+	}
+
+	&-title {
+		font-family: 'Noto Serif TC';
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 1.44;
+		margin-bottom: 8px;
+		
+		@include media-breakpoint-up(md) {
+			font-size: 24px;
+			margin-bottom: 12px;
+		}
+	}
+
+	&-content {
+		font-family: 'Noto Sans TC';
+		text-align: justify;
+		margin-bottom: 16px;
+
+		// 限制內容長度
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+	}
+
+	&-sparkler {
+		width: 20px;
+		height: 20px;
+		background-image: url("../images/sparkler.png");
+		background-size: cover;
+
+		@include media-breakpoint-up(md) {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	&-footer {
+		display: flex;
+		justify-content: space-between;
+
+		border-style: solid none;
+		border-width: 2px;
+		border-color: $primary;
+
+		font-weight: 700;
+		line-height: 1.44;
+		color: $black;
+		
+		padding: 8px 0;
+
+		@include media-breakpoint-up(md) {
+			padding: 12px 0;
+		}
+		
+		&-left, &-right {
+			display: flex;
+			align-items: center;
+			column-gap: 4px;
+		}
+
+		&-left {
+			font-family: 'Noto Serif TC';
+			
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+		
+		&-right {
+			a {
+				position: relative;
+				display: flex;
+				align-items: center;
+			}
+			
+			a:hover::before {
+				content: "";
+				width: 29px;
+				height: 29px;
+				border-radius: 50%;
+				background-color: #FBFF22;
+				position: absolute;
+				left: -10px;
+				z-index: -1;
+			}
+		}
+	}
+}

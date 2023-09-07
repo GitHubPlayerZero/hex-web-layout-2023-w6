@@ -1,0 +1,25 @@
+// Helper
+
+@include media-breakpoint-down(md) {
+	.no-gutter-mobile {
+		--bs-gutter-x: 0;
+	}
+}
+
+
+// Font
+.noto-serif-tc {
+	font-family: 'Noto Serif TC';
+}
+.noto-sans-tc {
+	font-family: 'Noto Sans TC';
+}
+
+
+.trstf-linear {
+	transition-timing-function: linear;
+}
+
+.lts-p10 {
+	letter-spacing: .1em;
+}

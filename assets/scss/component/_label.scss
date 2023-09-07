@@ -1,0 +1,45 @@
+// Label
+
+.label-shadow {
+	font-family: 'Noto Serif TC';
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.43;
+	color: $black;
+
+	border: 1px solid $black;
+	border-left: none;
+
+	box-shadow: -4px 0 $black;
+	margin-left: 4px;
+
+	padding: 4px 16px 4px 12px;
+
+	&:hover {
+		box-shadow: -4px 0 $secondary;
+		color: $white;
+		background-color: $black;
+	}
+
+	@include media-breakpoint-up(md) {
+		font-size: 16px;
+		line-height: 1.44;
+		padding-left: 20px;
+		padding-right: 24px;
+	}
+}
+
+
+.label-title {
+	font-family: 'Noto Serif TC';
+	font-weight: 700;
+	line-height: 1.44;
+	color: $black;
+	background-color: $white;
+	padding: 8px 16px;
+
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-4deg);
+}
