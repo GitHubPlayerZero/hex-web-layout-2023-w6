@@ -399,6 +399,7 @@ $spacers: (
 	10: $spacer * 10,
 	11: $spacer * 11,
 	12: $spacer * 12,
+	25px: 25px,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -512,7 +513,8 @@ $border-widths: (
 ) !default;
 
 $border-style:                solid !default;
-$border-color:                $gray-300 !default;
+// $border-color:                $gray-300 !default;
+$border-color:                $primary !default;
 $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
@@ -611,7 +613,10 @@ $h6-font-size:                $font-size-base !default;
 // ) !default;
 // *custom
 $font-sizes: (
+	15: 15px,
+	16: 16px,
 	18: 18px,
+	19: 19px,
 	32: 32px,
 ) !default;
 // scss-docs-end font-sizes
@@ -868,13 +873,18 @@ $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
 
 $input-color:                           $body-color !default;
-$input-border-color:                    $gray-400 !default;
+// $input-border-color:                    $gray-400 !default;
+$input-border-color:                    $primary !default;	// *custom
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
 
-$input-border-radius:                   $border-radius !default;
-$input-border-radius-sm:                $border-radius-sm !default;
-$input-border-radius-lg:                $border-radius-lg !default;
+// $input-border-radius:                   $border-radius !default;
+// $input-border-radius-sm:                $border-radius-sm !default;
+// $input-border-radius-lg:                $border-radius-lg !default;
+// *custom
+$input-border-radius:                   0 !default;
+$input-border-radius-sm:                0 !default;
+$input-border-radius-lg:                0 !default;
 
 $input-focus-bg:                        $input-bg !default;
 $input-focus-border-color:              tint-color($component-active-bg, 50%) !default;

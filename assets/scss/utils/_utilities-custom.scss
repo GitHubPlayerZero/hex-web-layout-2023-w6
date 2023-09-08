@@ -17,9 +17,46 @@ $utilities: (
 			sm: $line-height-sm,
 			base: $line-height-base,
 			lg: $line-height-lg,
+			116: 1.16,
 			144: 1.44,
 		)
 	),
+	"width": (
+      property: width,
+      class: w,
+	  responsive: true,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto,
+		40px: 40px,
+		53px: 53px,
+		207px: 207px,
+		335px: 335px,
+      )
+    ),
+	"height": (
+      property: height,
+      class: h,
+	  responsive: true,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto,
+		39px: 39px,
+		55px: 55px,
+      )
+    ),
+	"border-width": (
+      property: border-width,
+      class: border,
+	  responsive: true,
+      values: $border-widths
+    ),
 
 	// New utilities
 	"aspect-ratio": (

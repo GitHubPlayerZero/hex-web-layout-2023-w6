@@ -124,34 +124,56 @@
 
 		<ul class="row row-gap-12 no-gutter-mobile">
 			<li class="col-10 col-md-6 col-lg-3 m-auto">
-				<div class="bg-body p-3 p-md-4 pb-8 pb-md-12 border border-2 border-primary position-relative">
+				<div class="bg-body p-3 p-md-4 pb-8 pb-md-12 border border-2 position-relative">
 					<span class="label-title">社群活動</span>
 					<img src="../assets/images/album/01.jpg" class="aspect-ratio-1 object-fit-cover mb-3 mb-md-4" alt="...">
 					<h2 class="fw-bold fs-18 lh-144 text-black">無聲派對-閉閉嘴dancing</h2>
 				</div>
 			</li>
 			<li class="col-10 col-md-6 col-lg-3 m-auto">
-				<div class="bg-body p-3 p-md-4 pb-8 pb-md-12 border border-2 border-primary rotate-2 position-relative">
+				<div class="bg-body p-3 p-md-4 pb-8 pb-md-12 border border-2 rotate-2 position-relative">
 					<span class="label-title">社群活動</span>
 					<img src="../assets/images/album/02.jpg" class="aspect-ratio-1 object-fit-cover mb-3 mb-md-4" alt="...">
 					<h2 class="fw-bold fs-18 lh-144 text-black">無聲派對-閉閉嘴dancing</h2>
 				</div>
 			</li>
 			<li class="col-10 col-md-6 col-lg-3 m-auto">
-				<div class="bg-body p-3 p-md-4 pb-8 pb-md-12 border border-2 border-primary rotate-n2 position-relative">
+				<div class="bg-body p-3 p-md-4 pb-8 pb-md-12 border border-2 rotate-n2 position-relative">
 					<span class="label-title">社群活動</span>
 					<img src="../assets/images/album/03.jpg" class="aspect-ratio-1 object-fit-cover mb-3 mb-md-4" alt="...">
 					<h2 class="fw-bold fs-18 lh-144 text-black">無聲派對-閉閉嘴dancing</h2>
 				</div>
 			</li>
 			<li class="col-10 col-md-6 col-lg-3 m-auto">
-				<div class="bg-body p-3 p-md-4 pb-8 pb-md-12 border border-2 border-primary rotate-2 position-relative">
+				<div class="bg-body p-3 p-md-4 pb-8 pb-md-12 border border-2 rotate-2 position-relative">
 					<span class="label-title">社群活動</span>
 					<img src="../assets/images/album/04.jpg" class="aspect-ratio-1 object-fit-cover mb-3 mb-md-4" alt="...">
 					<h2 class="fw-bold fs-18 lh-144 text-black">無聲派對-閉閉嘴dancing</h2>
 				</div>
 			</li>
 		</ul>
+
+		<br><hr><br>
+
+		<h2 class="myh2">background-img 測試</h2>
+		<p class="fs-18 mb-3">
+			結果：background-img 在 local 測試的路徑不管有沒有加 assets 都會顯示，但放上 GitHub Pages 就一定要正確的路徑。
+			<br>
+			註：路徑是視 CSS 寫在哪裡而定，若是寫在 HTML 上，路徑會是 ../assets/images/；若是寫在 SCSS 裡，因為統一由 all.scss import 進來，路徑會是 ../images/。
+			<br>
+			此範例是寫在 _sample.scss，統一由 all.scss 載入。
+		</p>
+
+		<p>img src="../assets/images/event/01.jpg"</p>
+		<div><img src="../assets/images/event/01.jpg" alt="event_01" loading="lazy"></div>
+		<br>
+
+		<p>../images/event/02.jpg</p>
+		<div class="sample-bg-img sample1"></div>
+		<br>
+
+		<p>../assets/images/event/03.jpg (GitHub Pages 會出不來)</p>
+		<div class="sample-bg-img sample2"></div>
 
 		<br><hr><br>
 
