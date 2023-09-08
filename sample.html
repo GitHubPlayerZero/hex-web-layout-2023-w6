@@ -19,9 +19,9 @@
 		}
 	</style>
 
-  <script type="module" crossorigin src="/hex-web-layout-2023-w6/assets/sample-61cb56b4.js"></script>
-  <link rel="modulepreload" crossorigin href="/hex-web-layout-2023-w6/assets/main-957c11ea.js">
-  <link rel="stylesheet" href="/hex-web-layout-2023-w6/assets/main-6666d8bf.css">
+  <script type="module" crossorigin src="/hex-web-layout-2023-w6/assets/sample-609aebed.js"></script>
+  <link rel="modulepreload" crossorigin href="/hex-web-layout-2023-w6/assets/main-c1a62984.js">
+  <link rel="stylesheet" href="/hex-web-layout-2023-w6/assets/main-accb17b1.css">
   <link rel="stylesheet" href="/hex-web-layout-2023-w6/assets/sample-9012858d.css">
 </head>
 
@@ -201,16 +201,24 @@
 		<br><hr><br>
 
 		<h2 class="myh2">background-img 測試</h2>
+		<p class="fs-18 mb-3">
+			結果：background-img 在 local 測試的路徑不管有沒有加 assets 都會顯示，但放上 GitHub Pages 就一定要正確的路徑。
+			<br>
+			註：路徑是視 CSS 寫在哪裡而定，若是寫在 HTML 上，路徑會是 ../assets/images/；若是寫在 SCSS 裡，因為統一由 all.scss import 進來，路徑會是 ../images/。
+			<br>
+			此範例是寫在 _sample.scss，統一由 all.scss 載入。
+		</p>
+
 		<p>img src="../assets/images/event/01.jpg"</p>
 		<div><img src="/hex-web-layout-2023-w6/assets/01-600fa06c.jpg" alt="event_01" loading="lazy"></div>
 		<br>
 
 		<p>../images/event/02.jpg</p>
-		<div class="bg-img bg-img-1"></div>
+		<div class="sample-bg-img sample1"></div>
 		<br>
 
-		<p>../assets/images/event/03.jpg</p>
-		<div class="bg-img bg-img-2"></div>
+		<p>../assets/images/event/03.jpg (GitHub Pages 會出不來)</p>
+		<div class="sample-bg-img sample2"></div>
 
 		<br><hr><br>
 
