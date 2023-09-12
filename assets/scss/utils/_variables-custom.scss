@@ -303,7 +303,8 @@ $primary:       #030303 !default;	// *custom
 // $secondary:     $gray-600 !default;
 $secondary:     #FBFF22 !default;	// *custom
 $success:       $green !default;
-$info:          $cyan !default;
+// $info:          $cyan !default;
+$info:          #9C9E18 !default;	// *custom
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
@@ -400,6 +401,7 @@ $spacers: (
 	11: $spacer * 11,
 	12: $spacer * 12,
 	25px: 25px,
+
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -617,7 +619,9 @@ $font-sizes: (
 	16: 16px,
 	18: 18px,
 	19: 19px,
+	24: 24px,
 	32: 32px,
+	48: 48px,
 ) !default;
 // scss-docs-end font-sizes
 
